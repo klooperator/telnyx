@@ -26,7 +26,6 @@ class Feed extends Component{
     }
 
     render(){
-        console.log(this)
         const {posts} = this.state;
         if(!posts)
         return <div />

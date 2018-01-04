@@ -44,11 +44,9 @@ class Post extends Component{
 
     renderComments = _comments =>{
         const comments = [..._comments];
-        console.log(comments)
         comments.sort((a,b)=>{
             return new Date(b.date) - new Date(a.date);
         })
-        console.log(JSON.parse(JSON.stringify(comments)))
         const parents = comments.filter(e=>{
             return !e.parent_id;
         })
@@ -110,7 +108,6 @@ class Post extends Component{
     }
 
     render(){
-        console.log(this);
         const {post, comments} = this.state;
         if(!post)return <div />
         return (
