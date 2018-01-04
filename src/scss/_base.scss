@@ -1,0 +1,39 @@
+html,
+body,
+body > .container {
+  height: 100%;
+}
+
+body {
+  > .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+label{
+  display: block;
+}
+textarea{
+  width: 100%;
+}
+.feed-list-item{
+  border-bottom: 1px solid #eee;
+}
+.post-content{
+  margin-top: 2em;
+  text-align: justify;
+}
+.post-details{
+  small, span{
+    margin-right: 25px
+  }
+}
+.single-comment{
+  border: 1px solid #eee;
+  margin: 5px 10px;
+}
+.post-comments{
+  background-color: rgb(210, 204, 224);
+  padding: 10px;
+}
